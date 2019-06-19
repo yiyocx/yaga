@@ -7,6 +7,10 @@
                 android:name=".LoginActivity"
                 android:label="@string/title_activity_login"
                 android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.yiyo.yaga.login.open"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
     </application>
 

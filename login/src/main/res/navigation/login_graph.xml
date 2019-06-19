@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/login_graph"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/login_graph"
             app:startDestination="@id/welcomeFragment">
 
-    <fragment android:id="@+id/welcomeFragment" android:name="yiyo.com.login.WelcomeFragment"
-              android:label="welcome_fragment" tools:layout="@layout/welcome_fragment"/>
+    <fragment android:id="@+id/welcomeFragment"
+              android:name="yiyo.com.login.WelcomeFragment"
+              android:label="welcome_fragment"
+              tools:layout="@layout/welcome_fragment">
+        <action android:id="@+id/action_welcomeFragment_to_loginFragment" app:destination="@id/loginFragment"/>
+    </fragment>
+    <fragment android:id="@+id/loginFragment"
+              android:name="yiyo.com.login.LoginFragment"
+              android:label="fragment_login"
+              tools:layout="@layout/fragment_login"/>
 </navigation>
