@@ -9,7 +9,8 @@
               android:name="yiyo.com.login.WelcomeFragment"
               android:label="welcome_fragment"
               tools:layout="@layout/welcome_fragment">
-        <action android:id="@+id/action_welcomeFragment_to_loginFragment" app:destination="@id/loginFragment"/>
+        <action android:id="@+id/action_welcomeFragment_to_loginFragment"
+                app:destination="@id/loginFragment"/>
     </fragment>
     <fragment android:id="@+id/loginFragment"
               android:name="yiyo.com.login.LoginFragment"

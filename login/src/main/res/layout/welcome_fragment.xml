@@ -19,10 +19,10 @@
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
     <Button
+            android:id="@+id/buttonGetStarted"
             android:text="Get started"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             android:layout_marginStart="16dp"
