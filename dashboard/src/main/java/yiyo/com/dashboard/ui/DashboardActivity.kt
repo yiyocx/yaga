@@ -1,10 +1,11 @@
-package yiyo.com.dashboard
+package yiyo.com.dashboard.ui
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import yiyo.com.dashboard.R
 
 class DashboardActivity : AppCompatActivity() {
 

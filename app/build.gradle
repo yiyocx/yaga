@@ -29,6 +29,7 @@ dependencies {
     implementation project(':actions')
     implementation project(':login')
     implementation project(':dashboard')
+    implementation project(':core')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlinVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
