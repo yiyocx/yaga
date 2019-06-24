@@ -4,7 +4,7 @@
 
     <application>
         <activity
-                android:name=".DashboardActivity"
+                android:name=".ui.DashboardActivity"
                 android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="com.yiyo.yaga.dashboard.open"/>

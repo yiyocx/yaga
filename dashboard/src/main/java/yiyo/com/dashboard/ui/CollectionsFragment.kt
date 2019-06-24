@@ -1,4 +1,4 @@
-package yiyo.com.dashboard
+package yiyo.com.dashboard.ui
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import yiyo.com.dashboard.R
 
 class CollectionsFragment : Fragment() {
 
