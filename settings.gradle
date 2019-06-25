@@ -1,1 +1,1 @@
-include ':app', ':login', ':actions', ':dashboard', ':core'
+include ':app', ':features:login', ':libraries:actions', ':features:dashboard', ':libraries:common'
