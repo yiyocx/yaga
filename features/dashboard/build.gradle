@@ -31,7 +31,6 @@ dependencies {
     implementation project(':libraries:actions')
     implementation project(':libraries:common')
 
-    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
     implementation "com.google.android.material:material:$rootProject.materialVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
