@@ -1,5 +1,6 @@
 apply from: '../feature_dependencies.gradle'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -23,7 +24,13 @@ android {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
     }
+    dataBinding {
+        enabled = true
+    }
+}
 
+kapt {
+    correctErrorTypes = true
 }
 
 dependencies {
@@ -34,4 +41,11 @@ dependencies {
     implementation "com.google.android.material:material:$rootProject.materialVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation "com.airbnb.android:epoxy:$rootProject.epoxyVersion"
+    implementation "com.airbnb.android:epoxy-databinding:$rootProject.epoxyVersion"
+    kapt "com.airbnb.android:epoxy-processor:$rootProject.epoxyVersion"
+
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
 }

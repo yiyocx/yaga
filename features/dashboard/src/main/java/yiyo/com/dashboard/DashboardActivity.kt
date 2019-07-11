@@ -1,4 +1,4 @@
-package yiyo.com.dashboard.ui
+package yiyo.com.dashboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

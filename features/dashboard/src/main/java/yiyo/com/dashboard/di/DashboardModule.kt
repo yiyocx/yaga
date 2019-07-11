@@ -5,7 +5,7 @@ import org.koin.dsl.module
 import retrofit2.Retrofit
 import yiyo.com.dashboard.data.api.PhotosService
 import yiyo.com.dashboard.data.repositories.PhotosRepository
-import yiyo.com.dashboard.ui.HomeViewModel
+import yiyo.com.dashboard.home.HomeViewModel
 
 val dashboardModule = module {
     viewModel { HomeViewModel(get()) }

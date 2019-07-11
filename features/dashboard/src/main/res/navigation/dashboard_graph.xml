@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/dashboard_graph"
-            app:startDestination="@id/homeFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_graph"
+    app:startDestination="@id/homeFragment">
 
-    <fragment android:id="@+id/homeFragment"
-              android:name="yiyo.com.dashboard.ui.HomeFragment"
-              android:label="PhotosFragment"
-              tools:layout="@layout/fragment_home"/>
-    <fragment android:id="@+id/collectionsFragment"
-              android:name="yiyo.com.dashboard.ui.CollectionsFragment"
-              android:label="CollectionsFragment"
-              tools:layout="@layout/fragment_collections"/>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="yiyo.com.dashboard.home.HomeFragment"
+        android:label="PhotosFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="yiyo.com.dashboard.ui.CollectionsFragment"
+        android:label="CollectionsFragment"
+        tools:layout="@layout/fragment_collections" />
 </navigation>
