@@ -10,7 +10,7 @@ class HomeController : TypedEpoxyController<List<Photo>>() {
         photos.forEach { photo ->
             itemPhoto {
                 id(photo.id)
-                url(photo.urls.regular)
+                photo(photo)
             }
         }
     }
