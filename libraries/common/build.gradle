@@ -33,6 +33,7 @@ dependencies {
     api "com.google.code.gson:gson:$rootProject.gsonVersion"
     api "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
     api "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
+    api "com.google.android.material:material:$rootProject.materialVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
