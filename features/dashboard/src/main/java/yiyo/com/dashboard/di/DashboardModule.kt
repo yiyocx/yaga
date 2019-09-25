@@ -8,7 +8,6 @@ import yiyo.com.dashboard.data.repositories.PhotosRepository
 import yiyo.com.dashboard.home.HomeViewModel
 
 val dashboardModule = module {
-    viewModel { HomeViewModel(get()) }
     single { providePhotosService(get()) }
     single { PhotosRepository(get()) }
 }
