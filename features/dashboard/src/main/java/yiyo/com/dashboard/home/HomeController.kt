@@ -1,17 +1,20 @@
 package yiyo.com.dashboard.home
 
-import com.airbnb.epoxy.TypedEpoxyController
-import yiyo.com.dashboard.data.models.Photo
-import yiyo.com.dashboard.itemPhoto
+import com.airbnb.epoxy.EpoxyModel
+import com.airbnb.epoxy.paging.PagedListEpoxyController
+import yiyo.com.dashboard.ItemPhotoBindingModel_
+import yiyo.com.dashboard.data.models.UnsplashPhoto
 
-class HomeController : TypedEpoxyController<List<Photo>>() {
-
-    override fun buildModels(photos: List<Photo>) {
-        photos.forEach { photo ->
-            itemPhoto {
-                id(photo.id)
-                photo(photo)
-            }
+class HomeController : PagedListEpoxyController<UnsplashPhoto>() {
+    override fun buildItemModel(currentPosition: Int, item: UnsplashPhoto?): EpoxyModel<*> {
+        return if (item != null) {
+            ItemPhotoBindingModel_()
+                .id(item.id)
+                .photo(item)
+        } else {
+            ItemPhotoBindingModel_()
+                .id(-currentPosition)
+                .photo(item)
         }
     }
 }

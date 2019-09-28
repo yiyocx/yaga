@@ -35,6 +35,6 @@ class HomeFragment : BaseMvRxFragment() {
     }
 
     override fun invalidate() = withState(viewModel) { state ->
-        controller.setData(state.photos)
+        controller.submitList(state.photos)
     }
 }

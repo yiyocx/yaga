@@ -45,6 +45,9 @@ dependencies {
     implementation "com.airbnb.android:epoxy:$rootProject.epoxyVersion"
     implementation "com.airbnb.android:epoxy-databinding:$rootProject.epoxyVersion"
     kapt "com.airbnb.android:epoxy-processor:$rootProject.epoxyVersion"
+    implementation "com.airbnb.android:epoxy-paging:$rootProject.epoxyVersion"
+    implementation "androidx.paging:paging-rxjava2:$rootProject.pagingVersion"
+
 
     implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
     kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
